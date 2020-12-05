@@ -17,9 +17,8 @@ nav {
 
 nav img {
   display: block;
-  max-width: 500px;
+  width: 200px;
   margin: 0 auto;
-  padding: 0 0 10px 23px;
 }
 
 nav span {
@@ -29,6 +28,7 @@ nav span {
   letter-spacing: 2px;
   color: black;
   line-height: 30px;
+  margin: 10px 0;
 }
 
 nav a {
@@ -38,25 +38,33 @@ nav a {
 /*  ---- Content Container  ----   */
 .content {
   width: 80%;
-  margin: 0 auto;
+  height: 500px;
+  margin: 10px auto;
+  overflow-y: scroll;
 }
 
 /*  ---- Content Header  ----   */
 
 .header {
+  height: 320px;
   background-image: url("../assets/htmlcss1-img_burgerphoto.webp");
   background-size: cover;
   background-position: center;
 }
 
 .header h1 {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
   background-color: #0798a8;
+  opacity: 0.7;
   color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   width: 55%;
+  padding: 20px;
 }
 
 /*  ---- Content Body  ----   */
@@ -75,12 +83,12 @@ nav a {
 /*  ---- Content Button  ----   */
 .button {
   border-radius: 4px;
-  width: 150px;
+  width: 200px;
   color: #05a8aa;
   display: block;
   font-weight: 700;
-  margin: 0 auto;
-  padding: 10px 20px;
+  margin: 40px auto;
+  padding: 20px 20px;
   border: 1px solid #05a8aa;
   transition: 0.6s;
 }
@@ -92,14 +100,17 @@ nav a {
 }
 
 /* Content Nutrition */
-// ul.nutrition {}
+ul.nutrition {
+  padding: 0 20px 20px 20px;
+}
 
 ul.nutrition li {
-  margin-top: 20px;
+  width: 180px;
+  margin-bottom: 3px;
   display: inline-block;
   background-color: #05a8aa;
   list-style: none;
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 .nutrition .category {
